@@ -1,6 +1,7 @@
 package com.gmy.cloud.service;
 
-import com.gmy.cloud.entity.Payment;
+
+import com.gmy.entity.Payment;
 
 /**
  * @author gmydl

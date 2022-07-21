@@ -1,4 +1,4 @@
-package com.gmy.cloud.entity;
+package com.gmy.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

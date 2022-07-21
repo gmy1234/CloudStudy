@@ -1,8 +1,9 @@
 package com.gmy.cloud.controller;
 
-import com.gmy.cloud.entity.CommonResult;
-import com.gmy.cloud.entity.Payment;
+
 import com.gmy.cloud.service.PaymentService;
+import com.gmy.entity.CommonResult;
+import com.gmy.entity.Payment;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -24,18 +25,16 @@ public class PaymentController {
 
 
     @PostMapping("/insert")
-    public CommonResult<?> createPayment(Payment payment){
+    public CommonResult<?> createPayment(@RequestBody Payment payment){
         int count = paymentService.create(payment);
         log.info("插入数据" + count);
 
-        if(count > 0)
-        {
+        if(count > 0) {
             return new CommonResult<>(200,"插入数据库成功", count);
-        }else{
+        }else {
             return new CommonResult<>(444,"插入数据库失败",null);
         }
     }
-
 
     @GetMapping("/get/{id}")
     public CommonResult<Payment> getPaymentInfoById(@PathVariable("id") Long id){

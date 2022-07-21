@@ -1,6 +1,6 @@
 package com.gmy.cloud.dao;
 
-import com.gmy.cloud.entity.Payment;
+import com.gmy.entity.Payment;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

@@ -1,8 +1,8 @@
 package com.gmy.cloud.service.impl;
 
 import com.gmy.cloud.dao.PaymentDao;
-import com.gmy.cloud.entity.Payment;
 import com.gmy.cloud.service.PaymentService;
+import com.gmy.entity.Payment;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
