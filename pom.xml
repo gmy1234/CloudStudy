@@ -12,6 +12,8 @@
         <module>cloud-consumer-order30300</module>
         <module>cloud-api-common</module>
         <module>cloud-consumer-feign-order30300</module>
+        <module>cloud-provider-hygtrix-payment30001</module>
+        <module>cloud-eureka-server7001</module>
     </modules>
     <packaging>pom</packaging>
 
