@@ -11,6 +11,7 @@
         <module>cloud-provider-payment30001</module>
         <module>cloud-consumer-order30300</module>
         <module>cloud-api-common</module>
+        <module>cloud-consumer-feign-order30300</module>
     </modules>
     <packaging>pom</packaging>
 
