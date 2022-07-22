@@ -15,6 +15,7 @@
         <module>cloud-provider-hygtrix-payment30001</module>
         <module>cloud-eureka-server7001</module>
         <module>cloud-consumer-feign-hystrix-order30300</module>
+        <module>cloud-gateway-9257</module>
     </modules>
     <packaging>pom</packaging>
 
