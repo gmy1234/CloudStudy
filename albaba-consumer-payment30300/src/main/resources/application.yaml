@@ -1,0 +1,15 @@
+server:
+  port: 30300
+
+spring:
+  application:
+    name: cloud-order-consumer-nacos
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://43.138.22.185:8848
+
+# 消费者将要去访问的微服务名称(注册成功进 nacos 的微服务提供者)
+service-url:
+  nacos-user-service: http://cloud-payment-provider-nacos
+
