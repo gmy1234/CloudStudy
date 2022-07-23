@@ -18,6 +18,7 @@
         <module>cloud-gateway-9257</module>
         <module>albaba-provider-payment30001</module>
         <module>albaba-consumer-payment30300</module>
+        <module>cloud-nacos-client</module>
     </modules>
     <packaging>pom</packaging>
 
