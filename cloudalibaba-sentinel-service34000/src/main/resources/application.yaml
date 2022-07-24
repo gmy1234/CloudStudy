@@ -1,0 +1,28 @@
+server:
+  port: 34000
+
+spring:
+  application:
+    name: cloudalibaba-sentinel-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://43.138.22.185:8848 #Nacos服务注册中心地址
+    sentinel:
+      transport:
+        dashboard: localhost:8899 #配置Sentinel dashboard地址
+        # 8719是http通信服务【sentinel后台监控服务】，34000【微服务】的同时，
+        # 8858【sentinel前台展示服务】交互数据，将监控到的数据在dashboard上展现。
+        port: 8719
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    enabled-by-default: true
+
+feign:
+  sentinel:
+    enabled: true # 激活Sentinel对Feign的支持
+

@@ -19,6 +19,7 @@
         <module>albaba-provider-payment30001</module>
         <module>albaba-consumer-payment30300</module>
         <module>cloud-nacos-client</module>
+        <module>cloudalibaba-sentinel-service34000</module>
     </modules>
     <packaging>pom</packaging>
 
